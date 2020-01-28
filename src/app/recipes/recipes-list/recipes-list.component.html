@@ -9,8 +9,9 @@
         
        
         <app-recipes-item
-        *ngFor="let recipeEL of recipes"
+        *ngFor="let recipeEL of recipes; let i = index"
         [recipe]="recipeEL"
+        [index]="i"
          ></app-recipes-item>
     <!--  (recipeSelected)="onRecipeSelected(recipeEL)" this code was in
     <app-recipes-items after [recipe]="recipeEL" -->
